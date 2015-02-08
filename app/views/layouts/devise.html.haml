@@ -11,18 +11,15 @@
           .col-sm-5.pull-right
             = yield
           .col-sm-7.brand-holder.pull-left
-            %h1
-              = brand_title
+            %h1 ibiart 私有git仓库
             - if brand_item
               = brand_image
               = brand_text
             - else
-              %h3 Open source software to collaborate on code
+              %h3 We collaborate. We create. We work for ourselves.
 
               %p
-                Manage git repositories with fine grained access controls that keep your code secure.
-                Perform code reviews and enhance collaboration with merge requests.
-                Each project can also have an issue tracker and a wiki.
+                请使用个人账号登陆。申请账号请联系管理员。
 
             - if extra_sign_in_text.present?
               = markdown(extra_sign_in_text)
@@ -30,6 +27,4 @@
     %hr
     .container
       .footer-links
-        = link_to "Explore", explore_root_path
-        = link_to "Documentation", "http://doc.gitlab.com/"
-        = link_to "About GitLab", "https://about.gitlab.com/"
+        = link_to "About ibiart", "http://www.ibiart.com/"
