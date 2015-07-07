@@ -12,18 +12,18 @@ postgresql['log_directory'] = '/var/log/gitlab/postgresql'
 
 # Some configuration of GitLab
 # You can find more at https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/README.md#configuration
-gitlab_rails['gitlab_email_from'] = 'gitlab@example.com'
-gitlab_rails['gitlab_support_email'] = 'support@example.com'
+gitlab_rails['gitlab_email_from'] = 'git@ibiart.com'
+gitlab_rails['gitlab_support_email'] = 'git@ibiart.com'
 gitlab_rails['time_zone'] = 'Europe/Paris'
 
 # SMTP settings
 # You must use an external server, the Docker container does not install an SMTP server
 gitlab_rails['smtp_enable'] = true
-gitlab_rails['smtp_address'] = "smtp.example.com"
-gitlab_rails['smtp_port'] = 587
-gitlab_rails['smtp_user_name'] = "user"
-gitlab_rails['smtp_password'] = "password"
-gitlab_rails['smtp_domain'] = "example.com"
+gitlab_rails['smtp_address'] = "smtp.ibiart.com"
+gitlab_rails['smtp_port'] = 994
+gitlab_rails['smtp_user_name'] = "git@ibiart.com"
+gitlab_rails['smtp_password'] = "ibaZAQ!2wsx"
+gitlab_rails['smtp_domain'] = "ibiart.com"
 gitlab_rails['smtp_authentication'] = "plain"
 gitlab_rails['smtp_enable_starttls_auto'] = true
 

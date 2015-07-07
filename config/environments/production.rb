@@ -72,6 +72,16 @@ Gitlab::Application.configure do
   # # }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.ibiart.com",
+    :port                 => 994,
+    :domain               => 'ibiart.com',
+    :user_name            => 'git@ibiart.com',
+    :password             => 'ibaZAQ!2wsx',
+    :authentication       =>  :login,
+    :enable_starttls_auto => true
+  }
+
 
   config.eager_load = true
   config.assets.js_compressor = :uglifier
